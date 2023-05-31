@@ -56,7 +56,7 @@ const App = () => {
           placeholder="Write your task"
         />
 
-        <button style={{borderRadius:"20px", width:"100px", border:"solid black 1px" , background:"lightblue", cursor: "pointer"}} type="submit" onClick={updateId ? updateTask : addTask}>
+        <button style={{borderRadius:"20px", width:"110px", border:"solid black 1px" , background:"lightblue", cursor: "pointer"}} type="submit" onClick={updateId ? updateTask : addTask}>
           {updateId ? "Update Task" : "Add Task"}
         </button>
       </div>
