@@ -32,7 +32,15 @@ const App = () => {
     alert("R : Task Read");
   };
 
-
+  const updateTask = () => {
+    axios.put(`${baseURL}/update/${updateId}`, { task: input }).then((res) => {
+      console.log(res.data);
+      setUpdateUI((prevState) => !prevState);
+      setUpdateId(null);
+      setInput("");
+      alert("U : Task Updated");
+    });
+  };
 
   return (
     <>
