@@ -30,7 +30,17 @@ const App = () => {
         </button>
       </div>
 
-      
+      <ul>
+        {tasks.map((task) => (
+          <List
+            key={task._id}
+            id={task._id}
+            task={task.task}
+            setUpdateUI={setUpdateUI}
+            updateMode={updateMode}
+          />
+        ))}
+      </ul>
     </main>
     </>
   );
