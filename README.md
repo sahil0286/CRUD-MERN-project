@@ -20,7 +20,7 @@ The CRUD Operations is a web application that allows users to perform CRUD (Crea
 4. Start the backend server: `npm run dev`
 5. Go to directory name frontend : `cd frontend`
 6. Install dependencies for the frontend : `npm install`
-7. Start the frontend server: `npm start
+7. Start the frontend server: `npm start`
 8. Access the application in your browser at: `http://localhost:3000`
 
 ## Technologies Used
