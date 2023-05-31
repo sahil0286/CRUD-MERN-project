@@ -11,6 +11,15 @@ The CRUD Operations is a web application that allows users to perform CRUD (Crea
 
 ## Screenshot
 
+![c1](https://github.com/sahil0286/CRUD-MERN-project/assets/119412630/0c120f80-27b4-428c-9de0-047997087cd3)
+
+![c2](https://github.com/sahil0286/CRUD-MERN-project/assets/119412630/41c3f678-91bc-4cd3-99c8-164071e8752f)
+
+![c3](https://github.com/sahil0286/CRUD-MERN-project/assets/119412630/1de29408-9007-4216-bb08-202a2f2aaf70)
+
+![c4](https://github.com/sahil0286/CRUD-MERN-project/assets/119412630/353fe09b-9a9a-4970-8b29-a101773c2560)
+
+![c5](https://github.com/sahil0286/CRUD-MERN-project/assets/119412630/5ba1d2c5-3809-4ed3-a01f-dcf767a4b411)
 
 ## Getting Started
 
