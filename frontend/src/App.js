@@ -16,6 +16,15 @@ const App = () => {
     });
   }, [updateUI]);
 
+  const addTask = () => {
+    axios.post(`${baseURL}/save`, { task: input }).then((res) => {
+      console.log(res.data);
+      setInput("");
+      setUpdateUI((prevState) => !prevState);
+      alert("C : Task Created");
+    });
+  };
+
 
 
   return (
