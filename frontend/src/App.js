@@ -25,6 +25,13 @@ const App = () => {
     });
   };
 
+  const updateMode = (id, text) => {
+    console.log(text);
+    setInput(text);
+    setUpdateId(id);
+    alert("R : Task Read");
+  };
+
 
 
   return (
