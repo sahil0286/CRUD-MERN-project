@@ -19,3 +19,15 @@ module.exports.saveTask=  (req, res) => {
     });
 };
 
+module.exports.updateTask=  (req, res) => {
+    const { id } = req.params;
+    const { task } = req.body;
+
+    TaskModel.findByIdAndUpdate(id, { task })
+    .then(()=> res.send("Task updated successfully"))
+    .catch((err) => {
+        console.log(err);
+        res.send({ error : err, msg: "Task failed to update"});
+    });
+};
+
