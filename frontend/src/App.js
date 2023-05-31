@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import List from "./components/List";
+import axios from "axios";
+import { baseURL } from "./utils/constant";
 
-function App() {
+const App = () => {
+  const [input, setInput] = useState("");
+  const [tasks, setTasks] = useState([]);
+  const [updateUI, setUpdateUI] = useState(false);
+  const [updateId, setUpdateId] = useState(null);
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <main>
+      <h1 className="title">CRUD Operations</h1>
+
+      <div className="input_holder">
+        <input
+          style={{borderRadius:"5px", border:"solid black 1px"}}
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Write your task"
+        />
+
+       
+      </div>
+
+      
+    </main>
+    </>
   );
-}
+};
 
 export default App;
