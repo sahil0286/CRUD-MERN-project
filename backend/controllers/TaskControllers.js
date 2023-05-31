@@ -31,3 +31,13 @@ module.exports.updateTask=  (req, res) => {
     });
 };
 
+module.exports.deleteTask=  (req, res) => {
+    const { id } = req.params;
+
+    TaskModel.findByIdAndDelete(id)
+    .then(()=> res.send("Task deleted successfully"))
+    .catch((err) => {
+        console.log(err);
+        res.send({ error : err, msg: "Task failed to delete"});
+    });
+};
