@@ -9,7 +9,14 @@ const App = () => {
   const [updateUI, setUpdateUI] = useState(false);
   const [updateId, setUpdateId] = useState(null);
 
-  
+  useEffect(() => {
+    axios.get(`${baseURL}/get`).then((res) => {
+      console.log(res.data);
+      setTasks(res.data);
+    });
+  }, [updateUI]);
+
+
 
   return (
     <>
